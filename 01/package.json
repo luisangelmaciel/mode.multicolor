@@ -1,0 +1,17 @@
+{
+  "name": "Templete HTML5 hiHello.monster! ",
+  "version": "0.0.1",
+  "description": "Templete HTML5 hiHello.monster con un 100% Score en lighthouse, desarrollado por @luisangelmaciel. Facil de usar y con todos los hacks incluidos metas y el manifest.jason para WPA",
+  "keywords": "templete html5, templete html 100% Score en lighthouse, templete WPA ",
+  "license": "Copyright (c) Templete HTML5 hiHello.monster!",
+  "author": "[ hiHello.monster ] Luis Angel Maciel",
+  "scripts": {
+    "build": "parcel build index.html",
+    "dev": "parcel index.html --open",
+    "start": "npm run build && npm run dev",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4"
+  }
+}

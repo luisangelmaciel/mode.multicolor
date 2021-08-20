@@ -1,0 +1,16 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Luis Angel Maciel -- Desarrollador responsable -- @luisangelmaciel
+    Sharon Phiphi & Eevee "Ivisito" -- Energydog 
+
+# THANKS
+
+    W3-Scholl
+
+# TECHNOLOGY COLOPHON
+
+    CSS3, HTML5
+    Apache Server Configs, jQuery, Modernizr, Normalize.css, Google Ligthouse
