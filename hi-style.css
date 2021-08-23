@@ -1,0 +1,2791 @@
+    /* hiHello 1.0 Junio 2021 by @luisangelmaciel. Inspirado en W3.CSS by Jan Egil and Borge Refsnes  */
+    
+    html {
+        font-family: "Lato", sans-serif;
+        margin: 0;
+        background-color: white;
+        color: black;
+        font-size: 25px;
+        box-sizing: border-box
+    }
+    
+    *,
+    *:before,
+    *:after {
+        box-sizing: inherit
+    }
+    /* Extract from normalize.css by Nicolas Gallagher and Jonathan Neal git.io/normalize */
+    
+    html {
+        -ms-text-size-adjust: 100%;
+        -webkit-text-size-adjust: 100%
+    }
+    
+    body {
+        font-family: "Lato", sans-serif;
+        margin: 0;
+        background-color: white;
+        color: black;
+        font-size: 16px;
+        font-family: Arial;
+        box-sizing: border-box;
+        line-height: 1.5;
+    }
+    
+    article,
+    aside,
+    details,
+    figcaption,
+    figure,
+    footer,
+    header,
+    main,
+    menu,
+    nav,
+    section {
+        display: block
+    }
+    
+    summary {
+        display: list-item
+    }
+    
+    audio,
+    canvas,
+    progress,
+    video {
+        display: inline-block
+    }
+    
+    progress {
+        vertical-align: baseline
+    }
+    
+    audio:not([controls]) {
+        display: none;
+        height: 0
+    }
+    
+    [hidden],
+    template {
+        display: none
+    }
+    
+    a {
+        background-color: transparent;
+    }
+    
+    a:active,
+    a:hover {
+        outline-width: 0
+    }
+    
+    abbr[title] {
+        border-bottom: none;
+        text-decoration: underline;
+        text-decoration: underline dotted
+    }
+    
+    b,
+    strong {
+        font-weight: bolder
+    }
+    
+    dfn {
+        font-style: italic
+    }
+    
+    mark {
+        background: #ff0;
+        color: #000
+    }
+    
+    small {
+        font-size: 80%
+    }
+    
+    sub,
+    sup {
+        font-size: 75%;
+        line-height: 0;
+        position: relative;
+        vertical-align: baseline
+    }
+    
+    sub {
+        bottom: -0.25em
+    }
+    
+    sup {
+        top: -0.5em
+    }
+    
+    figure {
+        margin: 1em 40px
+    }
+    
+    img {
+        border-style: none
+    }
+    
+    code,
+    kbd,
+    pre,
+    samp {
+        font-family: monospace, monospace;
+        font-size: 1em
+    }
+    
+    hr {
+        box-sizing: content-box;
+        height: 0;
+        overflow: visible
+    }
+    
+    button,
+    input,
+    select,
+    textarea,
+    optgroup {
+        font: inherit;
+        margin: 0
+    }
+    
+    optgroup {
+        font-weight: bold
+    }
+    
+    button,
+    input {
+        overflow: visible
+    }
+    
+    button,
+    select {
+        text-transform: none
+    }
+    
+    button,
+    [type=button],
+    [type=reset],
+    [type=submit] {
+        -webkit-appearance: button
+    }
+    
+    button::-moz-focus-inner,
+    [type=button]::-moz-focus-inner,
+    [type=reset]::-moz-focus-inner,
+    [type=submit]::-moz-focus-inner {
+        border-style: none;
+        padding: 0
+    }
+    
+    button:-moz-focusring,
+    [type=button]:-moz-focusring,
+    [type=reset]:-moz-focusring,
+    [type=submit]:-moz-focusring {
+        outline: 1px dotted ButtonText
+    }
+    
+    fieldset {
+        border: 1px solid #c0c0c0;
+        margin: 0 2px;
+        padding: .35em .625em .75em
+    }
+    
+    legend {
+        color: inherit;
+        display: table;
+        max-width: 100%;
+        padding: 0;
+        white-space: normal
+    }
+    
+    textarea {
+        overflow: auto
+    }
+    
+    [type=checkbox],
+    [type=radio] {
+        padding: 0
+    }
+    
+    [type=number]::-webkit-inner-spin-button,
+    [type=number]::-webkit-outer-spin-button {
+        height: auto
+    }
+    
+    [type=search] {
+        -webkit-appearance: textfield;
+        outline-offset: -2px
+    }
+    
+    [type=search]::-webkit-search-decoration {
+        -webkit-appearance: none
+    }
+    
+     ::-webkit-file-upload-button {
+        -webkit-appearance: button;
+        font: inherit
+    }
+    /* End extract & Start Hihello original */
+    
+    .hi-hide-all {
+        visibility: hidden;
+        display: none!important
+    }
+    
+    .hi-fakeimg {
+        background-color: rgb(218, 212, 212);
+        width: 100%;
+        padding: 20px
+    }
+    
+    .hi-code-card {
+        padding: 0.01em 16px;
+        margin-top: 16px;
+        margin-bottom: 16px;
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+        color: #000!important;
+        background-color: #f1f1f1!important
+    }
+    
+    .hi-button-blue {
+        background-color: #017dbb;
+        color: white;
+        border-radius: 25px;
+        font-size: 18px;
+        width: 200px;
+        border: none;
+        display: inline-block;
+        padding: 8px 16px;
+        vertical-align: middle;
+        overflow: hidden;
+        text-decoration: none;
+        text-align: center;
+        cursor: pointer;
+        white-space: nowrap;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none
+    }
+    
+    .hi-button-blue:hover {
+        background-color: #208cc2 !important;
+        color: white!important;
+        border-radius: 25px;
+        font-size: 18px;
+        width: 200px;
+        border: none;
+        display: inline-block;
+        padding: 8px 16px;
+        vertical-align: middle;
+        overflow: hidden;
+        text-decoration: none;
+        color: inherit;
+        background-color: inherit;
+        text-align: center;
+        cursor: pointer;
+        white-space: nowrap;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none
+    }
+    
+    .hi-dark-mode {
+        background-color: black;
+        color: white;
+    }
+    /*! este es la prueba 
+    .hi-dark-mode 
+    ul:hover,
+    .hi-ul.hi-hoverable li:hover
+    .hi-hoverable tbody tr:hover, {
+       background-color: black;
+       color: white;
+    }*/
+    
+    .visuallyhidden {
+        border: 0;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+    }
+    
+    .tab {
+        overflow: hidden;
+        background-color: #f1f1f1;
+    }
+    /* Style the buttons inside the tab */
+    
+    .tab button {
+        background-color: inherit;
+        float: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 14px 14px;
+        transition: 0.3s;
+        font-size: 20px;
+    }
+    /* Change background color of buttons on hover */
+    
+    .tab button:hover {
+        background-color: #ddd;
+    }
+    /* Create an active/current tablink class */
+    
+    .tab button.active {
+        background-color: #ccc;
+    }
+    /* Style the tab content */
+    
+    .taptop {
+        overflow: hidden;
+        background-color: #000000;
+        color: #ffffff;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        margin: 0;
+        border: none;
+        font-size: 24px
+    }
+    
+    .tablinktop {
+        background-color: #000000;
+        color: #ffffff;
+        float: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 5px 5px 5px 5px;
+        width: 33.33%;
+        margin-top: 10px;
+    }
+    
+    .tablinktop:hover {
+        font-weight: bold;
+    }
+    
+    .tablinktop i {
+        color: #ffffff;
+    }
+    
+    .tablinktop i:hover {
+        color: #f0ecec;
+    }
+    /* Style the tab content que es el mismo que body para que pueda cambiar de darkmode */
+    
+    .tabcontenttop {
+        margin: 0;
+        display: none;
+        padding: 6px 12px;
+        border: none;
+    }
+    /* H1 Pride  */
+    
+    .pride {
+        margin-top: 0%;
+        line-height: 100px;
+        background: linear-gradient( to right, #ff1616, #ff7716, #ffdc16, #36c945, #10a5ce, #0f0096, #a51eff, #ff1616);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-size: 400px;
+        background-position: center 0%;
+        animation: background-slide 25s infinite linear;
+    }
+    
+    @keyframes background-slide {
+        100% {
+            background-position: -8160px;
+        }
+    }
+    /* Footerx  */
+    
+    .hi-icon-bar {
+        width: 100%;
+        background-color: #ffffff;
+        overflow: auto position: fixed;
+        font-size: 25pt;
+    }
+    /* Style the tab content */
+    
+    .hi-icon-bar i {
+        float: left;
+        width: 25%;
+        text-align: center;
+        padding: 0px 0;
+        transition: all 0.3s ease;
+        color: #bfbfbf;
+        background-color: #ffffff;
+    }
+    
+    .hi-icon-bar i:hover {
+        font-weight: bold;
+        font-size: 26pt;
+    }
+    
+    .hi-icon-bar p {
+        color: transparent;
+        font-size: 16px;
+        text-align: center;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        margin-top: 0vw;
+    }
+    
+    .hi-icon-bar p:hover {
+        color: grey;
+        font-size: 16px;
+        text-align: center;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        margin-top: 0vw;
+    }
+    
+    .hi-footerx {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: white;
+        color: rgb(102, 102, 102);
+        padding-top: 10px;
+        padding-bottom: 1px;
+        text-align: center;
+        line-height: 0;
+    }
+    /* Boton principal */
+    
+    .button-auto {
+        border-radius: 12px;
+        background-color: #FFFFFF;
+        border: none;
+        color: #000000;
+        text-align: center;
+        font-size: 14px;
+        padding: 12px;
+        width: 200px;
+        transition: all 0.5s;
+        cursor: pointer;
+        margin: 0px;
+    }
+    
+    .button-auto span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+    }
+    
+    .button-auto span:after {
+        content: '\00bb';
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: -20px;
+        transition: 0.5s;
+    }
+    
+    .button-auto:hover span {
+        padding-right: 25px;
+    }
+    
+    .button-auto:hover span:after {
+        opacity: 1;
+        right: 0;
+    }
+    
+    .hi-event-list {
+        display: block;
+    }
+    
+    .hi-event {
+        text-decoration: none;
+    }
+    
+    .hi-event:nth-child(3n+1) .hi-event-container {
+        border-left-color: #223eb9;
+        /* verde */
+    }
+    
+    .hi-event:nth-child(3n) .hi-event-container {
+        border-left-color: #2fa7d6;
+        /*amarillo*/
+    }
+    
+    .hi-event:nth-child(3n-1) .hi-event-container {
+        border-left-color: #F44336;
+        /*rojo*/
+    }
+    
+    .hi-event-container {
+        color: #131313;
+        transition: all 0.2s ease;
+        border-left: 3px solid;
+        padding-top: 10px;
+        padding-bottom: 15px;
+    }
+    
+    .hi-event-container:hover {
+        border-left-width: 10px;
+    }
+    
+    .hi-date-container {
+        display: inline-block;
+        width: 4em;
+        padding-bottom: 2px;
+        font-family: Oswald;
+        font-weight: 600;
+        color: #343434;
+    }
+    
+    .hi-date {
+        font-size: 1.5em;
+        display: block;
+    }
+    
+    .hi-month {
+        display: block;
+        font-size: .4em;
+        font-weight: 300;
+        margin-top: -.8em;
+        text-transform: uppercase;
+    }
+    
+    .hi-detail-container {
+        display: inline-block;
+        vertical-align: top;
+        padding-top: 3px;
+    }
+    
+    .hi-title {
+        font-family: Oswald;
+        font-weight: bold;
+        font-size: 1em;
+    }
+    
+    .hi-description {
+        display: block;
+        font-size: .5em;
+        font-family: Oswald;
+    }
+    
+    .hi-acc-container {
+        width: 100%;
+        background: none;
+    }
+    
+    .hi-acc-btn {
+        width: 100%;
+        padding: 1rem 0rem;
+        font-size: 1.6rem;
+        cursor: pointer;
+        background: none;
+        border: none;
+        outline: none;
+        text-align: left;
+        transition: all 0.5s linear;
+        color: inherit;
+    }
+    
+    .hi-acc-btn:after {
+        content: "\271A";
+        color: #017dbb;
+        float: right;
+        transition: all 0.3s linear;
+        font-weight: bold;
+    }
+    
+    .hi-acc-btn.is-open:after {
+        transform: rotate(90deg);
+    }
+    
+    .hi-acc-btn:hover,
+    .hi-acc-btn.is-open {
+        color: inherit;
+        font-weight: bold;
+    }
+    
+    .hi-acc-btnx {
+        width: 100%;
+        font-size: 1rem;
+        cursor: pointer;
+        border: none;
+        outline: none;
+        text-align: left;
+        transition: all 0.5s linear;
+    }
+    
+    .hi-acc-btnx:after {
+        color: #eae9f3;
+        float: right;
+        transition: all 0.3s linear;
+    }
+    
+    .hi-acc-content {
+        max-height: 0;
+        font-size: 1rem;
+        margin: 0 .6rem;
+        overflow: hidden;
+        transition: max-height 0.3s ease-in-out;
+        border-bottom: 1px solid #ccc;
+        background: none;
+        color: inherit;
+        list-style-type: none;
+    }
+    
+    A:link {
+        text-decoration: none
+    }
+    
+    A:visited {
+        text-decoration: none
+    }
+    
+    A:hover {
+        text-decoration: none
+    }
+    
+    a {
+        text-decoration: none !important;
+        outline: none !important;
+    }
+    
+    .switch {
+        position: relative;
+        display: inline-block;
+        width: 60px;
+        height: 26px;
+    }
+    
+    .switch input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+    
+    .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #b3b3b3;
+        -webkit-transition: .4s;
+        transition: .4s;
+    }
+    
+    .slider:before {
+        position: absolute;
+        content: "";
+        height: 18px;
+        width: 18px;
+        left: 3px;
+        bottom: 3px;
+        background-color: white;
+        -webkit-transition: .4s;
+        transition: .4s;
+    }
+    
+    input:checked+.slider {
+        background-color: #262626;
+    }
+    
+    input:focus+.slider {
+        box-shadow: 0 0 1px #262626;
+    }
+    
+    input:checked+.slider:before {
+        -webkit-transform: translateX(26px);
+        -ms-transform: translateX(26px);
+        transform: translateX(26px);
+    }
+    /* Rounded sliders */
+    
+    .slider.round {
+        border-radius: 34px;
+    }
+    
+    .slider.round:before {
+        border-radius: 50%;
+    }
+    /* End extract Hihello original */
+    
+    html,
+    body {
+        font-family: "Lato", sans-serif;
+        font-size: 15px;
+        line-height: 1.5
+    }
+    
+    html {
+        overflow-x: hidden
+    }
+    
+    h1 {
+        font-size: 36px
+    }
+    
+    h2 {
+        font-size: 30px
+    }
+    
+    h3 {
+        font-size: 24px
+    }
+    
+    h4 {
+        font-size: 20px
+    }
+    
+    h5 {
+        font-size: 18px
+    }
+    
+    h6 {
+        font-size: 16px
+    }
+    
+    .hi-serif {
+        font-family: serif
+    }
+    
+    .hi-sans-serif {
+        font-family: sans-serif
+    }
+    
+    .hi-cursive {
+        font-family: cursive
+    }
+    
+    .hi-monospace {
+        font-family: monospace
+    }
+    
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "Segoe UI", Arial, sans-serif;
+        font-weight: 400;
+        margin: 10px 0
+    }
+    
+    .hi-wide {
+        letter-spacing: 4px
+    }
+    
+    hr {
+        border: 0;
+        border-top: 1px solid #eee;
+        margin: 20px 0
+    }
+    
+    .hi-image {
+        max-width: 100%;
+        height: auto
+    }
+    
+    img {
+        vertical-align: middle
+    }
+    
+    a {
+        color: inherit
+    }
+    
+    .hi-table,
+    .hi-table-all {
+        border-collapse: collapse;
+        border-spacing: 0;
+        width: 100%;
+        display: table
+    }
+    
+    .hi-table-all {
+        border: 1px solid #ccc
+    }
+    
+    .hi-bordered tr,
+    .hi-table-all tr {
+        border-bottom: 1px solid #ddd
+    }
+    
+    .hi-striped tbody tr:nth-child(even) {
+        background-color: #f1f1f1
+    }
+    
+    .hi-table-all tr:nth-child(odd) {
+        background-color: #fff
+    }
+    
+    .hi-table-all tr:nth-child(even) {
+        background-color: #f1f1f1
+    }
+    
+    .hi-hoverable tbody tr :hover,
+    .hi-ul.hi-hoverable li:hover {
+        background-color: none;
+        /*! antes solo era: background-color: #ccc */
+    }
+    
+    .hi-text-bold-hover {
+        font-style: inherit;
+    }
+    
+    .hi-text-bold-hover:hover {
+        font-weight: bold;
+    }
+    
+    .hi-i-hover {
+        color: inherit;
+    }
+    
+    .hi-i-hover:hover {
+        color: grey
+    }
+    
+    .hi-invisible {
+        color: transparent;
+    }
+    
+    .hi-centered tr th,
+    .hi-centered tr td {
+        text-align: center
+    }
+    
+    .hi-table td,
+    .hi-table th,
+    .hi-table-all td,
+    .hi-table-all th {
+        padding: 8px 8px;
+        display: table-cell;
+        text-align: left;
+        vertical-align: top
+    }
+    
+    .hi-table th:first-child,
+    .hi-table td:first-child,
+    .hi-table-all th:first-child,
+    .hi-table-all td:first-child {
+        padding-left: 16px
+    }
+    
+    .hi-btn,
+    .hi-button {
+        border: none;
+        display: inline-block;
+        padding: 8px 16px;
+        vertical-align: middle;
+        overflow: hidden;
+        text-decoration: none;
+        color: inherit;
+        background-color: inherit;
+        text-align: center;
+        cursor: pointer;
+        white-space: nowrap
+    }
+    
+    .hi-btn:hover {
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+    }
+    
+    .hi-btn,
+    .hi-button {
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none
+    }
+    
+    .hi-disabled,
+    .hi-btn:disabled,
+    .hi-button:disabled {
+        cursor: not-allowed;
+        opacity: 0.3
+    }
+    
+    .hi-disabled *,
+     :disabled * {
+        pointer-events: none
+    }
+    
+    .hi-btn.hi-disabled:hover,
+    .hi-btn:disabled:hover {
+        box-shadow: none
+    }
+    
+    .hi-badge,
+    .hi-tag {
+        background-color: #000;
+        color: #fff;
+        display: inline-block;
+        padding-left: 8px;
+        padding-right: 8px;
+        text-align: center
+    }
+    
+    .hi-badge {
+        border-radius: 50%
+    }
+    
+    .w3-ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0
+    }
+    
+    .w3-ul li {
+        padding: 8px 16px;
+        border-bottom: 1px solid #ddd
+    }
+    
+    .w3-ul li:last-child {
+        border-bottom: none
+    }
+    
+    .hi-ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        transition: max-height 0.3s ease-in-out;
+        font-size: 1.6rem;
+    }
+    
+    .hi-ul li {
+        border-bottom: none;
+        padding: 8px 16px;
+        border-bottom: 1px solid #ddd;
+        font-size: 1rem;
+    }
+    
+    .hi-ul li:last-child {
+        border-bottom: none
+    }
+    
+    .hi-ul-btn {
+        width: 100%;
+        padding: 1rem 0rem;
+        font-size: 1.6rem;
+        cursor: pointer;
+        background: none;
+        border: none;
+        outline: none;
+        text-align: left;
+        transition: all 0.5s linear;
+        color: inherit;
+    }
+    
+    .hi-ul-btn:after {
+        content: "\271A";
+        color: #017dbb;
+        float: right;
+        transition: all 0.3s linear;
+        font-weight: bold;
+    }
+    
+    .hi-ul-btn.is-open:after {
+        transform: rotate(90deg);
+    }
+    
+    .hi-ul-btn:hover,
+    .hi-ul-btn.is-open {
+        color: inherit;
+        font-weight: bold;
+    }
+    
+    .hi-tooltip,
+    .hi-display-container {
+        position: relative
+    }
+    
+    .hi-tooltip .hi-text {
+        display: none
+    }
+    
+    .hi-tooltip:hover .hi-text {
+        display: inline-block
+    }
+    
+    .hi-ripple:active {
+        opacity: 0.5
+    }
+    
+    .hi-ripple {
+        transition: opacity 0s
+    }
+    
+    .hi-input {
+        padding: 8px;
+        display: block;
+        border: none;
+        border-bottom: 1px solid #ccc;
+        width: 100%
+    }
+    
+    .hi-select {
+        padding: 9px 0;
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid #ccc
+    }
+    
+    .hi-dropdown-click,
+    .hi-dropdown-hover {
+        position: relative;
+        display: inline-block;
+        cursor: pointer
+    }
+    
+    .hi-dropdown-hover:hover .hi-dropdown-content {
+        display: block
+    }
+    
+    .hi-dropdown-hover:first-child,
+    .hi-dropdown-click:hover {
+        background-color: #ccc;
+        color: #000
+    }
+    
+    .hi-dropdown-hover:hover>.hi-button:first-child,
+    .hi-dropdown-click:hover>.hi-button:first-child {
+        background-color: #ccc;
+        color: #000
+    }
+    
+    .hi-dropdown-content {
+        cursor: auto;
+        color: #000;
+        background-color: #fff;
+        display: none;
+        position: absolute;
+        min-width: 160px;
+        margin: 0;
+        padding: 0;
+        z-index: 1
+    }
+    
+    .hi-check,
+    .hi-radio {
+        width: 24px;
+        height: 24px;
+        position: relative;
+        top: 6px
+    }
+    
+    .hi-sidebar {
+        height: 100%;
+        width: 200px;
+        background-color: #fff;
+        position: fixed!important;
+        z-index: 1;
+        overflow: auto
+    }
+    
+    .hi-bar-block .hi-dropdown-hover,
+    .hi-bar-block .hi-dropdown-click {
+        width: 100%
+    }
+    
+    .hi-bar-block .hi-dropdown-hover .hi-dropdown-content,
+    .hi-bar-block .hi-dropdown-click .hi-dropdown-content {
+        min-width: 100%
+    }
+    
+    .hi-bar-block .hi-dropdown-hover .hi-button,
+    .hi-bar-block .hi-dropdown-click .hi-button {
+        width: 100%;
+        text-align: left;
+        padding: 8px 16px
+    }
+    
+    .hi-main,
+    #main {
+        transition: margin-left .4s
+    }
+    
+    .hi-modal {
+        z-index: 3;
+        display: none;
+        padding-top: 100px;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgb(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.4)
+    }
+    
+    .hi-modal-content {
+        margin: auto;
+        background-color: #fff;
+        position: relative;
+        padding: 0;
+        outline: 0;
+        width: 100%;
+        /* tenia  width: 600px; */
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .hi-modal-fullscreen {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .hi-bar {
+        width: 100%;
+        overflow: hidden
+    }
+    
+    .hi-center .hi-bar {
+        display: inline-block;
+        width: auto
+    }
+    
+    .hi-bar .hi-bar-item {
+        padding: 8px 16px;
+        float: left;
+        width: auto;
+        border: none;
+        display: block;
+        outline: 0
+    }
+    
+    .hi-bar .hi-dropdown-hover,
+    .hi-bar .hi-dropdown-click {
+        position: static;
+        float: left
+    }
+    
+    .hi-bar .hi-button {
+        white-space: normal
+    }
+    
+    .hi-bar-block .hi-bar-item {
+        width: 100%;
+        display: block;
+        padding: 8px 16px;
+        text-align: left;
+        border: none;
+        white-space: normal;
+        float: none;
+        outline: 0
+    }
+    
+    .hi-bar-block.hi-center .hi-bar-item {
+        text-align: center
+    }
+    
+    .hi-block {
+        display: block;
+        width: 100%
+    }
+    
+    .hi-responsive {
+        display: block;
+        overflow-x: auto
+    }
+    
+    .hi-container:after,
+    .hi-container:before,
+    .hi-panel:after,
+    .hi-panel:before,
+    .hi-row:after,
+    .hi-row:before,
+    .hi-row-padding:after,
+    .hi-row-padding:before,
+    .hi-cell-row:before,
+    .hi-cell-row:after,
+    .hi-clear:after,
+    .hi-clear:before,
+    .hi-bar:before,
+    .hi-bar:after {
+        content: "";
+        display: table;
+        clear: both
+    }
+    
+    .hi-col,
+    .hi-half,
+    .hi-third,
+    .hi-twothird,
+    .hi-threequarter,
+    .hi-quarter {
+        float: left;
+        width: 100%
+    }
+    
+    .hi-col.s1 {
+        width: 8.33333%
+    }
+    
+    .hi-col.s2 {
+        width: 16.66666%
+    }
+    
+    .hi-col.s3 {
+        width: 24.99999%
+    }
+    
+    .hi-col.s4 {
+        width: 33.33333%
+    }
+    
+    .hi-col.s5 {
+        width: 41.66666%
+    }
+    
+    .hi-col.s6 {
+        width: 49.99999%
+    }
+    
+    .hi-col.s7 {
+        width: 58.33333%
+    }
+    
+    .hi-col.s8 {
+        width: 66.66666%
+    }
+    
+    .hi-col.s9 {
+        width: 74.99999%
+    }
+    
+    .hi-col.s10 {
+        width: 83.33333%
+    }
+    
+    .hi-col.s11 {
+        width: 91.66666%
+    }
+    
+    .hi-col.s12 {
+        width: 99.99999%
+    }
+    
+    @media (min-width:601px) {
+        .hi-col.m1 {
+            width: 8.33333%
+        }
+        .hi-col.m2 {
+            width: 16.66666%
+        }
+        .hi-col.m3,
+        .hi-quarter {
+            width: 24.99999%
+        }
+        .hi-col.m4,
+        .hi-third {
+            width: 33.33333%
+        }
+        .hi-col.m5 {
+            width: 41.66666%
+        }
+        .hi-col.m6,
+        .hi-half {
+            width: 49.99999%
+        }
+        .hi-col.m7 {
+            width: 58.33333%
+        }
+        .hi-col.m8,
+        .hi-twothird {
+            width: 66.66666%
+        }
+        .hi-col.m9,
+        .hi-threequarter {
+            width: 74.99999%
+        }
+        .hi-col.m10 {
+            width: 83.33333%
+        }
+        .hi-col.m11 {
+            width: 91.66666%
+        }
+        .hi-col.m12 {
+            width: 99.99999%
+        }
+    }
+    
+    @media (min-width:993px) {
+        .hi-col.l1 {
+            width: 8.33333%
+        }
+        .hi-col.l2 {
+            width: 16.66666%
+        }
+        .hi-col.l3 {
+            width: 24.99999%
+        }
+        .hi-col.l4 {
+            width: 33.33333%
+        }
+        .hi-col.l5 {
+            width: 41.66666%
+        }
+        .hi-col.l6 {
+            width: 49.99999%
+        }
+        .hi-col.l7 {
+            width: 58.33333%
+        }
+        .hi-col.l8 {
+            width: 66.66666%
+        }
+        .hi-col.l9 {
+            width: 74.99999%
+        }
+        .hi-col.l10 {
+            width: 83.33333%
+        }
+        .hi-col.l11 {
+            width: 91.66666%
+        }
+        .hi-col.l12 {
+            width: 99.99999%
+        }
+    }
+    
+    .hi-rest {
+        overflow: hidden
+    }
+    
+    .hi-stretch {
+        margin-left: -16px;
+        margin-right: -16px
+    }
+    
+    .hi-content,
+    .hi-auto {
+        margin-left: auto;
+        margin-right: auto
+    }
+    
+    .hi-content {
+        max-width: 980px
+    }
+    
+    .hi-auto {
+        max-width: 1140px
+    }
+    
+    .hi-cell-row {
+        display: table;
+        width: 100%
+    }
+    
+    .hi-cell {
+        display: table-cell
+    }
+    
+    .hi-cell-top {
+        vertical-align: top
+    }
+    
+    .hi-cell-middle {
+        vertical-align: middle
+    }
+    
+    .hi-cell-bottom {
+        vertical-align: bottom
+    }
+    
+    .hi-hide {
+        display: none!important
+    }
+    
+    .hi-show-block,
+    .hi-show {
+        display: block!important
+    }
+    
+    .hi-show-inline-block {
+        display: inline-block!important
+    }
+    
+    @media (max-width:1205px) {
+        .hi-auto {
+            max-width: 95%
+        }
+    }
+    
+    @media (max-width:600px) {
+        .hi-modal-content {
+            margin: 0 10px;
+            width: auto!important
+        }
+        .hi-modal {
+            padding-top: 20px
+        }
+        .hi-dropdown-hover.hi-mobile .hi-dropdown-content,
+        .hi-dropdown-click.hi-mobile .hi-dropdown-content {
+            position: relative
+        }
+        .hi-hide-small {
+            display: none!important
+        }
+        .hi-mobile {
+            display: block;
+            width: 100%!important
+        }
+        .hi-bar-item.hi-mobile,
+        .hi-dropdown-hover.hi-mobile,
+        .hi-dropdown-click.hi-mobile {
+            text-align: center
+        }
+        .hi-dropdown-hover.hi-mobile,
+        .hi-dropdown-hover.hi-mobile .hi-btn,
+        .hi-dropdown-hover.hi-mobile .hi-button,
+        .hi-dropdown-click.hi-mobile,
+        .hi-dropdown-click.hi-mobile .hi-btn,
+        .hi-dropdown-click.hi-mobile .hi-button {
+            width: 100%
+        }
+    }
+    
+    @media (max-width:768px) {
+        .hi-modal-content {
+            width: 500px
+        }
+        .hi-modal {
+            padding-top: 50px
+        }
+    }
+    
+    @media (min-width:993px) {
+        .hi-modal-content {
+            width: 900px
+        }
+        .hi-hide-large {
+            display: none!important
+        }
+        .hi-sidebar.hi-collapse {
+            display: block!important
+        }
+    }
+    
+    @media (max-width:992px) and (min-width:601px) {
+        .hi-hide-medium {
+            display: none!important
+        }
+    }
+    
+    @media (max-width:992px) {
+        .hi-sidebar.hi-collapse {
+            display: none
+        }
+        .hi-main {
+            margin-left: 0!important;
+            margin-right: 0!important
+        }
+        .hi-auto {
+            max-width: 100%
+        }
+    }
+    
+    .hi-top,
+    .hi-bottom {
+        position: fixed;
+        width: 100%;
+        z-index: 1
+    }
+    
+    .hi-top {
+        top: 0
+    }
+    
+    .hi-bottom {
+        bottom: 0
+    }
+    
+    .hi-overlay {
+        position: fixed;
+        display: none;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 2
+    }
+    
+    .hi-display-topleft {
+        position: absolute;
+        left: 0;
+        top: 0
+    }
+    
+    .hi-display-topright {
+        position: absolute;
+        right: 0;
+        top: 0
+    }
+    
+    .hi-display-bottomleft {
+        position: absolute;
+        left: 0;
+        bottom: 0
+    }
+    
+    .hi-display-bottomright {
+        position: absolute;
+        right: 0;
+        bottom: 0
+    }
+    
+    .hi-display-middle {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%)
+    }
+    
+    .hi-display-left {
+        position: absolute;
+        top: 50%;
+        left: 0%;
+        transform: translate(0%, -50%);
+        -ms-transform: translate(-0%, -50%)
+    }
+    
+    .hi-display-right {
+        position: absolute;
+        top: 50%;
+        right: 0%;
+        transform: translate(0%, -50%);
+        -ms-transform: translate(0%, -50%)
+    }
+    
+    .hi-display-topmiddle {
+        position: absolute;
+        left: 50%;
+        top: 0;
+        transform: translate(-50%, 0%);
+        -ms-transform: translate(-50%, 0%)
+    }
+    
+    .hi-display-bottommiddle {
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translate(-50%, 0%);
+        -ms-transform: translate(-50%, 0%)
+    }
+    
+    .hi-display-container:hover .hi-display-hover {
+        display: block
+    }
+    
+    .hi-display-container:hover span.hi-display-hover {
+        display: inline-block
+    }
+    
+    .hi-display-hover {
+        display: none
+    }
+    
+    .hi-display-position {
+        position: absolute
+    }
+    
+    .hi-circle {
+        border-radius: 50%
+    }
+    
+    .hi-round-small {
+        border-radius: 2px
+    }
+    
+    .hi-round,
+    .hi-round-medium {
+        border-radius: 4px
+    }
+    
+    .hi-round-large {
+        border-radius: 8px
+    }
+    
+    .hi-round-xlarge {
+        border-radius: 16px
+    }
+    
+    .hi-round-xxlarge {
+        border-radius: 32px
+    }
+    
+    .hi-row-padding,
+    .hi-row-padding>.hi-half,
+    .hi-row-padding>.hi-third,
+    .hi-row-padding>.hi-twothird,
+    .hi-row-padding>.hi-threequarter,
+    .hi-row-padding>.hi-quarter,
+    .hi-row-padding>.hi-col {
+        padding: 0 8px
+    }
+    
+    .hi-container,
+    .hi-panel {
+        padding: 0.01em 16px;
+        width: 100%;
+        background: none;
+    }
+    
+    .hi-panel {
+        margin-top: 16px;
+        margin-bottom: 16px
+    }
+    
+    .hi-code,
+    .hi-codespan {
+        font-family: Consolas, "courier new";
+        font-size: 1mpx
+    }
+    
+    .hi-code {
+        width: auto;
+        background-color: #fff;
+        padding: 8px 12px;
+        border-left: 4px solid #017dbb;
+        word-wrap: break-word
+    }
+    
+    .hi-codespan {
+        color: crimson;
+        background-color: #f1f1f1;
+        padding-left: 4px;
+        padding-right: 4px;
+        font-size: 110%
+    }
+    
+    .hi-card,
+    .hi-card-2 {
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12)
+    }
+    
+    .hi-card-4,
+    .hi-hover-shadow:hover {
+        box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19)
+    }
+    
+    .hi-spin {
+        animation: hi-spin 2s infinite linear
+    }
+    
+    @keyframes hi-spin {
+        0% {
+            transform: rotate(0deg)
+        }
+        100% {
+            transform: rotate(359deg)
+        }
+    }
+    
+    .hi-animate-fading {
+        animation: fading 10s infinite
+    }
+    
+    @keyframes fading {
+        0% {
+            opacity: 0
+        }
+        50% {
+            opacity: 1
+        }
+        100% {
+            opacity: 0
+        }
+    }
+    
+    .hi-animate-opacity {
+        animation: opac 0.8s
+    }
+    
+    @keyframes opac {
+        from {
+            opacity: 0
+        }
+        to {
+            opacity: 1
+        }
+    }
+    
+    .hi-animate-top {
+        position: relative;
+        animation: animatetop 0.4s
+    }
+    
+    @keyframes animatetop {
+        from {
+            top: -300px;
+            opacity: 0
+        }
+        to {
+            top: 0;
+            opacity: 1
+        }
+    }
+    
+    .hi-animate-left {
+        position: relative;
+        animation: animateleft 0.4s
+    }
+    
+    @keyframes animateleft {
+        from {
+            left: -300px;
+            opacity: 0
+        }
+        to {
+            left: 0;
+            opacity: 1
+        }
+    }
+    
+    .hi-animate-right {
+        position: relative;
+        animation: animateright 0.4s
+    }
+    
+    @keyframes animateright {
+        from {
+            right: -300px;
+            opacity: 0
+        }
+        to {
+            right: 0;
+            opacity: 1
+        }
+    }
+    
+    .hi-animate-bottom {
+        position: relative;
+        animation: animatebottom 0.4s
+    }
+    
+    @keyframes animatebottom {
+        from {
+            bottom: -300px;
+            opacity: 0
+        }
+        to {
+            bottom: 0;
+            opacity: 1
+        }
+    }
+    
+    .hi-animate-zoom {
+        animation: animatezoom 0.6s
+    }
+    
+    @keyframes animatezoom {
+        from {
+            transform: scale(0)
+        }
+        to {
+            transform: scale(1)
+        }
+    }
+    
+    .hi-animate-input {
+        transition: width 0.4s ease-in-out
+    }
+    
+    .hi-animate-input:focus {
+        width: 100%!important
+    }
+    
+    .hi-opacity,
+    .hi-hover-opacity:hover {
+        opacity: 0.60
+    }
+    
+    .hi-opacity-off,
+    .hi-hover-opacity-off:hover {
+        opacity: 1
+    }
+    
+    .hi-opacity-max {
+        opacity: 0.25
+    }
+    
+    .hi-opacity-min {
+        opacity: 0.75
+    }
+    
+    .hi-greyscale-max,
+    .hi-grayscale-max,
+    .hi-hover-greyscale:hover,
+    .hi-hover-grayscale:hover {
+        filter: grayscale(100%)
+    }
+    
+    .hi-greyscale,
+    .hi-grayscale {
+        filter: grayscale(75%)
+    }
+    
+    .hi-greyscale-min,
+    .hi-grayscale-min {
+        filter: grayscale(50%)
+    }
+    
+    .hi-sepia {
+        filter: sepia(75%)
+    }
+    
+    .hi-sepia-max,
+    .hi-hover-sepia:hover {
+        filter: sepia(100%)
+    }
+    
+    .hi-sepia-min {
+        filter: sepia(50%)
+    }
+    
+    .hi-tiny {
+        font-size: 10px!important
+    }
+    
+    .hi-small {
+        font-size: 12px!important
+    }
+    
+    .hi-medium {
+        font-size: 15px!important
+    }
+    
+    .hi-large {
+        font-size: 18px!important
+    }
+    
+    .hi-xlarge {
+        font-size: 24px!important
+    }
+    
+    .hi-xxlarge {
+        font-size: 36px!important
+    }
+    
+    .hi-xxxlarge {
+        font-size: 48px!important
+    }
+    
+    .hi-jumbo {
+        font-size: 64px!important
+    }
+    
+    .hi-left-align {
+        text-align: left!important
+    }
+    
+    .hi-right-align {
+        text-align: right!important
+    }
+    
+    .hi-justify {
+        text-align: justify!important
+    }
+    
+    .hi-center {
+        text-align: center!important
+    }
+    
+    .hi-border-0 {
+        border: 0!important
+    }
+    
+    .hi-border {
+        border: 1px solid #ccc!important
+    }
+    
+    .hi-border-top {
+        border-top: 1px solid #ccc!important
+    }
+    
+    .hi-border-bottom {
+        border-bottom: 1px solid #ccc!important
+    }
+    
+    .hi-border-left {
+        border-left: 1px solid #ccc!important
+    }
+    
+    .hi-border-right {
+        border-right: 1px solid #ccc!important
+    }
+    
+    .hi-topbar {
+        border-top: 6px solid #ccc!important
+    }
+    
+    .hi-bottombar {
+        border-bottom: 6px solid #ccc!important
+    }
+    
+    .hi-leftbar {
+        border-left: 6px solid #ccc!important
+    }
+    
+    .hi-rightbar {
+        border-right: 6px solid #ccc!important
+    }
+    
+    .hi-section,
+    .hi-code {
+        margin-top: 16px!important;
+        margin-bottom: 16px!important
+    }
+    
+    .hi-margin {
+        margin: 16px!important
+    }
+    
+    .hi-margin-top {
+        margin-top: 16px!important
+    }
+    
+    .hi-margin-bottom {
+        margin-bottom: 16px!important
+    }
+    
+    .hi-margin-left {
+        margin-left: 16px!important
+    }
+    
+    .hi-margin-right {
+        margin-right: 16px!important
+    }
+    
+    .hi-padding-small {
+        padding: 4px 8px!important
+    }
+    
+    .hi-padding {
+        padding: 8px 16px!important
+    }
+    
+    .hi-padding-large {
+        padding: 12px 24px!important
+    }
+    
+    .hi-padding-16 {
+        padding-top: 16px!important;
+        padding-bottom: 16px!important
+    }
+    
+    .hi-padding-24 {
+        padding-top: 24px!important;
+        padding-bottom: 24px!important
+    }
+    
+    .hi-padding-32 {
+        padding-top: 32px!important;
+        padding-bottom: 32px!important
+    }
+    
+    .hi-padding-48 {
+        padding-top: 48px!important;
+        padding-bottom: 48px!important
+    }
+    
+    .hi-padding-64 {
+        padding-top: 64px!important;
+        padding-bottom: 64px!important
+    }
+    
+    .hi-padding-top-64 {
+        padding-top: 64px!important
+    }
+    
+    .hi-padding-top-48 {
+        padding-top: 48px!important
+    }
+    
+    .hi-padding-top-32 {
+        padding-top: 32px!important
+    }
+    
+    .hi-padding-top-24 {
+        padding-top: 24px!important
+    }
+    
+    .hi-left {
+        float: left!important
+    }
+    
+    .hi-right {
+        float: right!important
+    }
+    
+    .hi-button:hover {
+        color: #000!important;
+        background-color: #ccc!important
+    }
+    
+    .hi-transparent,
+    .hi-hover-none:hover {
+        background-color: transparent!important
+    }
+    
+    .hi-hover-none:hover {
+        box-shadow: none!important
+    }
+    /* Colors */
+    
+    .hi-amber,
+    .hi-hover-amber:hover {
+        color: #000!important;
+        background-color: #ffc107!important
+    }
+    
+    .hi-aqua,
+    .hi-hover-aqua:hover {
+        color: #000!important;
+        background-color: #00ffff!important
+    }
+    
+    .hi-blue,
+    .hi-hover-blue:hover {
+        color: #fff!important;
+        background-color: #2196F3!important
+    }
+    
+    .hi-light-blue,
+    .hi-hover-light-blue:hover {
+        color: #000!important;
+        background-color: #87CEEB!important
+    }
+    
+    .hi-brown,
+    .hi-hover-brown:hover {
+        color: #fff!important;
+        background-color: #795548!important
+    }
+    
+    .hi-cyan,
+    .hi-hover-cyan:hover {
+        color: #000!important;
+        background-color: #00bcd4!important
+    }
+    
+    .hi-blue-grey,
+    .hi-hover-blue-grey:hover,
+    .hi-blue-gray,
+    .hi-hover-blue-gray:hover {
+        color: #fff!important;
+        background-color: #607d8b!important
+    }
+    
+    .hi-green,
+    .hi-hover-green:hover {
+        color: #fff!important;
+        background-color: #4CAF50!important
+    }
+    
+    .hi-light-green,
+    .hi-hover-light-green:hover {
+        color: #000!important;
+        background-color: #8bc34a!important
+    }
+    
+    .hi-indigo,
+    .hi-hover-indigo:hover {
+        color: #fff!important;
+        background-color: #3f51b5!important
+    }
+    
+    .hi-khaki,
+    .hi-hover-khaki:hover {
+        color: #000!important;
+        background-color: #f0e68c!important
+    }
+    
+    .hi-lime,
+    .hi-hover-lime:hover {
+        color: #000!important;
+        background-color: #cddc39!important
+    }
+    
+    .hi-orange,
+    .hi-hover-orange:hover {
+        color: #000!important;
+        background-color: #ff9800!important
+    }
+    
+    .hi-deep-orange,
+    .hi-hover-deep-orange:hover {
+        color: #fff!important;
+        background-color: #ff5722!important
+    }
+    
+    .hi-pink,
+    .hi-hover-pink:hover {
+        color: #fff!important;
+        background-color: #e91e63!important
+    }
+    
+    .hi-purple,
+    .hi-hover-purple:hover {
+        color: #fff!important;
+        background-color: #9c27b0!important
+    }
+    
+    .hi-deep-purple,
+    .hi-hover-deep-purple:hover {
+        color: #fff!important;
+        background-color: #673ab7!important
+    }
+    
+    .hi-red,
+    .hi-hover-red:hover {
+        color: #fff!important;
+        background-color: #f44336!important
+    }
+    
+    .hi-sand,
+    .hi-hover-sand:hover {
+        color: #000!important;
+        background-color: #fdf5e6!important
+    }
+    
+    .hi-teal,
+    .hi-hover-teal:hover {
+        color: #fff!important;
+        background-color: #009688!important
+    }
+    
+    .hi-yellow,
+    .hi-hover-yellow:hover {
+        color: #000!important;
+        background-color: #ffeb3b!important
+    }
+    
+    .hi-hotpink {
+        color: #ea9999!important;
+        background-color: #ea9999!important
+    }
+    
+    .hi-crisom {
+        color: #cc0000!important;
+        background-color: #cc0000!important
+    }
+    
+    .hi-naranja {
+        color: #ff9900!important;
+        background-color: #ff9900!important
+    }
+    
+    .hi-gold {
+        color: #f1c232!important;
+        background-color: #f1c232!important
+    }
+    
+    .hi-verde {
+        color: #6aa84f;
+        background-color: #6aa84f!important
+    }
+    
+    .hi-royalblue {
+        color: #3c78d8!important;
+        background-color: #3c78d8!important
+    }
+    
+    .hi-blueviolet {
+        color: #9900ff;
+        background-color: #9900ff!important
+    }
+    
+    .hi-negro {
+        color: #000;
+        background-color: #000!
+    }
+    
+    .hi-blanco {
+        color: #fff!important;
+        background-color: #fff!important
+    }
+    
+    .hi-bg-igual {
+        background-color: inherit;
+    }
+    
+    .hi-bg-igual-text {
+        color: inherit;
+    }
+    
+    .hi-hotpink-text {
+        color: #ea9999!important;
+    }
+    
+    .hi-crisom-text {
+        color: #cc0000!important;
+    }
+    
+    .hi-naranja-text {
+        color: #ff9900!important;
+    }
+    
+    .hi-gold-text {
+        color: #f1c232!important;
+    }
+    
+    .hi-verde-text {
+        color: #6aa84f;
+    }
+    
+    .hi-royalblue-text {
+        color: #3c78d8!important;
+    }
+    
+    .hi-blueviolet-text {
+        color: #9900ff;
+    }
+    
+    .hi-negro-text {
+        color: #000;
+    }
+    
+    .hi-blanco-text {
+        color: #fff!important;
+    }
+    
+    .hi-ED5565-text {
+        color: #ED5565!important;
+    }
+    
+    .hi-ED5565 {
+        background-color: #ED5565;
+    }
+    
+    .hi-DA4453-text {
+        color: #DA4453!important;
+    }
+    
+    .hi-DA4453 {
+        background-color: #DA4453;
+    }
+    
+    .background-color-FC6E51 {
+        background-color: #FC6E51
+    }
+    
+    .color-FC6E51 {
+        color: #FC6E51
+    }
+    
+    .background-color-E9573F {
+        background-color: #E9573F
+    }
+    
+    .color-E9573F {
+        color: #E9573F
+    }
+    
+    .background-color-FFCE54 {
+        background-color: #FFCE54
+    }
+    
+    .color-FFCE54 {
+        color: #FFCE54
+    }
+    
+    .background-color-FCBB42 {
+        background-color: #FCBB42
+    }
+    
+    .color-FCBB42 {
+        color: #FCBB42
+    }
+    
+    .background-color-A0D468 {
+        background-color: #A0D468
+    }
+    
+    .color-A0D468 {
+        color: #A0D468
+    }
+    
+    .background-color-8CC152 {
+        background-color: #8CC152
+    }
+    
+    .color-8CC152 {
+        color: #8CC152
+    }
+    
+    .background-color-48CFAD {
+        background-color: #48CFAD
+    }
+    
+    .color-48CFAD {
+        color: #48CFAD
+    }
+    
+    .background-color-37BC9B {
+        background-color: #37BC9B
+    }
+    
+    .color-37BC9B {
+        color: #37BC9B
+    }
+    
+    .background-color-4FC1E9 {
+        background-color: #4FC1E9
+    }
+    
+    .color-4FC1E9 {
+        color: #4FC1E9
+    }
+    
+    .background-color-3BAFDA {
+        background-color: #3BAFDA
+    }
+    
+    .color-3BAFDA {
+        color: #3BAFDA
+    }
+    
+    .background-color-5D9CEC {
+        background-color: #5D9CEC
+    }
+    
+    .color-5D9CEC {
+        color: #5D9CEC
+    }
+    
+    .background-color-4A89DC {
+        background-color: #4A89DC
+    }
+    
+    .color-4A89DC {
+        color: #4A89DC
+    }
+    
+    .background-color-AC92EC {
+        background-color: #AC92EC
+    }
+    
+    .color-AC92EC {
+        color: #AC92EC
+    }
+    
+    .background-color-967ADC {
+        background-color: #967ADC
+    }
+    
+    .color-967ADC {
+        color: #967ADC
+    }
+    
+    .background-color-EC87C0 {
+        background-color: #EC87C0
+    }
+    
+    .color-EC87C0 {
+        color: #EC87C0
+    }
+    
+    .background-color-D770AD {
+        background-color: #D770AD
+    }
+    
+    .color-D770AD {
+        color: #D770AD
+    }
+    
+    .background-color-AAB2BD {
+        background-color: #AAB2BD
+    }
+    
+    .color-AAB2BD {
+        color: #AAB2BD
+    }
+    
+    .background-color-656D78 {
+        background-color: #656D78
+    }
+    
+    .color-656D78 {
+        color: #656D78
+    }
+    
+    .hi-white,
+    .hi-hover-white:hover {
+        color: #000!important;
+        background-color: #fff!important
+    }
+    
+    .hi-black,
+    .hi-hover-black:hover {
+        color: #fff!important;
+        background-color: #000!important
+    }
+    
+    .hi-grey,
+    .hi-hover-grey:hover,
+    .hi-gray,
+    .hi-hover-gray:hover {
+        color: #000!important;
+        background-color: #9e9e9e!important
+    }
+    
+    .hi-light-grey,
+    .hi-hover-light-grey:hover,
+    .hi-light-gray,
+    .hi-hover-light-gray:hover {
+        color: #000!important;
+        background-color: #f1f1f1!important
+    }
+    
+    .hi-dark-grey,
+    .hi-hover-dark-grey:hover,
+    .hi-dark-gray,
+    .hi-hover-dark-gray:hover {
+        color: #fff!important;
+        background-color: #616161!important
+    }
+    
+    .hi-pale-red,
+    .hi-hover-pale-red:hover {
+        color: #000!important;
+        background-color: #ffdddd!important
+    }
+    
+    .hi-pale-green,
+    .hi-hover-pale-green:hover {
+        color: #000!important;
+        background-color: #ddffdd!important
+    }
+    
+    .hi-pale-yellow,
+    .hi-hover-pale-yellow:hover {
+        color: #000!important;
+        background-color: #ffffcc!important
+    }
+    
+    .hi-pale-blue,
+    .hi-hover-pale-blue:hover {
+        color: #000!important;
+        background-color: #ddffff!important
+    }
+    
+    .hi-text-amber,
+    .hi-hover-text-amber:hover {
+        color: #ffc107!important
+    }
+    
+    .hi-text-aqua,
+    .hi-hover-text-aqua:hover {
+        color: #00ffff!important
+    }
+    
+    .hi-text-blue,
+    .hi-hover-text-blue:hover {
+        color: #2196F3!important
+    }
+    
+    .hi-text-light-blue,
+    .hi-hover-text-light-blue:hover {
+        color: #87CEEB!important
+    }
+    
+    .hi-text-brown,
+    .hi-hover-text-brown:hover {
+        color: #795548!important
+    }
+    
+    .hi-text-cyan,
+    .hi-hover-text-cyan:hover {
+        color: #00bcd4!important
+    }
+    
+    .hi-text-blue-grey,
+    .hi-hover-text-blue-grey:hover,
+    .hi-text-blue-gray,
+    .hi-hover-text-blue-gray:hover {
+        color: #607d8b!important
+    }
+    
+    .hi-text-green,
+    .hi-hover-text-green:hover {
+        color: #4CAF50!important
+    }
+    
+    .hi-text-light-green,
+    .hi-hover-text-light-green:hover {
+        color: #8bc34a!important
+    }
+    
+    .hi-text-indigo,
+    .hi-hover-text-indigo:hover {
+        color: #3f51b5!important
+    }
+    
+    .hi-text-khaki,
+    .hi-hover-text-khaki:hover {
+        color: #b4aa50!important
+    }
+    
+    .hi-text-lime,
+    .hi-hover-text-lime:hover {
+        color: #cddc39!important
+    }
+    
+    .hi-text-orange,
+    .hi-hover-text-orange:hover {
+        color: #ff9800!important
+    }
+    
+    .hi-text-deep-orange,
+    .hi-hover-text-deep-orange:hover {
+        color: #ff5722!important
+    }
+    
+    .hi-text-pink,
+    .hi-hover-text-pink:hover {
+        color: #e91e63!important
+    }
+    
+    .hi-text-purple,
+    .hi-hover-text-purple:hover {
+        color: #9c27b0!important
+    }
+    
+    .hi-text-deep-purple,
+    .hi-hover-text-deep-purple:hover {
+        color: #673ab7!important
+    }
+    
+    .hi-text-red,
+    .hi-hover-text-red:hover {
+        color: #f44336!important
+    }
+    
+    .hi-text-sand,
+    .hi-hover-text-sand:hover {
+        color: #fdf5e6!important
+    }
+    
+    .hi-text-teal,
+    .hi-hover-text-teal:hover {
+        color: #009688!important
+    }
+    
+    .hi-text-yellow,
+    .hi-hover-text-yellow:hover {
+        color: #d2be0e!important
+    }
+    
+    .hi-text-white,
+    .hi-hover-text-white:hover {
+        color: #fff!important
+    }
+    
+    .hi-text-black,
+    .hi-hover-text-black:hover {
+        color: #000!important
+    }
+    
+    .hi-text-grey,
+    .hi-hover-text-grey:hover,
+    .hi-text-gray,
+    .hi-hover-text-gray:hover {
+        color: #757575!important
+    }
+    
+    .hi-text-light-grey,
+    .hi-hover-text-light-grey:hover,
+    .hi-text-light-gray,
+    .hi-hover-text-light-gray:hover {
+        color: #f1f1f1!important
+    }
+    
+    .hi-text-dark-grey,
+    .hi-hover-text-dark-grey:hover,
+    .hi-text-dark-gray,
+    .hi-hover-text-dark-gray:hover {
+        color: #3a3a3a!important
+    }
+    
+    .hi-border-amber,
+    .hi-hover-border-amber:hover {
+        border-color: #ffc107!important
+    }
+    
+    .hi-border-aqua,
+    .hi-hover-border-aqua:hover {
+        border-color: #00ffff!important
+    }
+    
+    .hi-border-blue,
+    .hi-hover-border-blue:hover {
+        border-color: #2196F3!important
+    }
+    
+    .hi-border-light-blue,
+    .hi-hover-border-light-blue:hover {
+        border-color: #87CEEB!important
+    }
+    
+    .hi-border-brown,
+    .hi-hover-border-brown:hover {
+        border-color: #795548!important
+    }
+    
+    .hi-border-cyan,
+    .hi-hover-border-cyan:hover {
+        border-color: #00bcd4!important
+    }
+    
+    .hi-border-blue-grey,
+    .hi-hover-border-blue-grey:hover,
+    .hi-border-blue-gray,
+    .hi-hover-border-blue-gray:hover {
+        border-color: #607d8b!important
+    }
+    
+    .hi-border-green,
+    .hi-hover-border-green:hover {
+        border-color: #4CAF50!important
+    }
+    
+    .hi-border-light-green,
+    .hi-hover-border-light-green:hover {
+        border-color: #8bc34a!important
+    }
+    
+    .hi-border-indigo,
+    .hi-hover-border-indigo:hover {
+        border-color: #3f51b5!important
+    }
+    
+    .hi-border-khaki,
+    .hi-hover-border-khaki:hover {
+        border-color: #f0e68c!important
+    }
+    
+    .hi-border-lime,
+    .hi-hover-border-lime:hover {
+        border-color: #cddc39!important
+    }
+    
+    .hi-border-orange,
+    .hi-hover-border-orange:hover {
+        border-color: #ff9800!important
+    }
+    
+    .hi-border-deep-orange,
+    .hi-hover-border-deep-orange:hover {
+        border-color: #ff5722!important
+    }
+    
+    .hi-border-pink,
+    .hi-hover-border-pink:hover {
+        border-color: #e91e63!important
+    }
+    
+    .hi-border-purple,
+    .hi-hover-border-purple:hover {
+        border-color: #9c27b0!important
+    }
+    
+    .hi-border-deep-purple,
+    .hi-hover-border-deep-purple:hover {
+        border-color: #673ab7!important
+    }
+    
+    .hi-border-red,
+    .hi-hover-border-red:hover {
+        border-color: #f44336!important
+    }
+    
+    .hi-border-sand,
+    .hi-hover-border-sand:hover {
+        border-color: #fdf5e6!important
+    }
+    
+    .hi-border-teal,
+    .hi-hover-border-teal:hover {
+        border-color: #009688!important
+    }
+    
+    .hi-border-yellow,
+    .hi-hover-border-yellow:hover {
+        border-color: #ffeb3b!important
+    }
+    
+    .hi-border-white,
+    .hi-hover-border-white:hover {
+        border-color: #fff!important
+    }
+    
+    .hi-border-black,
+    .hi-hover-border-black:hover {
+        border-color: #000!important
+    }
+    
+    .hi-border-grey,
+    .hi-hover-border-grey:hover,
+    .hi-border-gray,
+    .hi-hover-border-gray:hover {
+        border-color: #9e9e9e!important
+    }
+    
+    .hi-border-light-grey,
+    .hi-hover-border-light-grey:hover,
+    .hi-border-light-gray,
+    .hi-hover-border-light-gray:hover {
+        border-color: #f1f1f1!important
+    }
+    
+    .hi-border-dark-grey,
+    .hi-hover-border-dark-grey:hover,
+    .hi-border-dark-gray,
+    .hi-hover-border-dark-gray:hover {
+        border-color: #616161!important
+    }
+    
+    .hi-border-pale-red,
+    .hi-hover-border-pale-red:hover {
+        border-color: #ffe7e7!important
+    }
+    
+    .hi-border-pale-green,
+    .hi-hover-border-pale-green:hover {
+        border-color: #e7ffe7!important
+    }
+    
+    .hi-border-pale-yellow,
+    .hi-hover-border-pale-yellow:hover {
+        border-color: #ffffcc!important
+    }
+    
+    .hi-border-pale-blue,
+    .hi-hover-border-pale-blue:hover {
+        border-color: #e7ffff!important
+    }
